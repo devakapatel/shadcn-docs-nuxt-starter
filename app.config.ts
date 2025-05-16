@@ -1,16 +1,18 @@
+import "./styles/style.css"
+
 export default defineAppConfig({
   shadcnDocs: {
     site: {
-      name: 'shadcn-docs-nuxt',
-      description: 'Beautifully designed Nuxt Content template built with shadcn-vue. Customizable. Compatible. Open Source.',
+      name: 'T9',
+      description: 'Central Hub of Materials',
     },
     theme: {
       customizable: true,
-      color: 'zinc',
+      color: 'blue',
       radius: 0.5,
     },
     header: {
-      title: 'shadcn-docs-starter',
+      title: 'T9',
       showTitle: true,
       darkModeToggle: true,
       logo: {
@@ -20,20 +22,22 @@ export default defineAppConfig({
       nav: [],
       links: [{
         icon: 'lucide:github',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
+        to: 'https://github.com/devakapatel/t9',
         target: '_blank',
       }],
     },
     aside: {
       useLevel: true,
       collapse: false,
+      collapseLevel: 1,
+      folderStyle: 'default',
     },
     main: {
       breadCrumb: true,
-      showTitle: true,
+      showTitle: false,
     },
     footer: {
-      credits: 'Copyright © 2024',
+      credits: `T9 © ${new Date().getFullYear()} - All rights reserved`,
       links: [{
         icon: 'lucide:github',
         to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
@@ -43,21 +47,11 @@ export default defineAppConfig({
     toc: {
       enable: true,
       title: 'On This Page',
-      links: [{
-        title: 'Star on GitHub',
-        icon: 'lucide:star',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
-        target: '_blank',
-      }, {
-        title: 'Create Issues',
-        icon: 'lucide:circle-dot',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt/issues',
-        target: '_blank',
-      }],
     },
     search: {
       enable: true,
       inAside: false,
-    }
+      placeholderDetailed: 'Search...',
+    },
   }
 });

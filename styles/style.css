@@ -1,0 +1,12 @@
+mark {
+    background-color: transparent;
+    color: hsl(var(--primary));
+}
+
+.md\:grid-cols-\[220px_minmax\(0\,1fr\)\] {
+    max-width: 100%;
+}
+
+.max-w-screen-2xl {
+    max-width: 100%;
+}

@@ -6,26 +6,95 @@ navigation: false
 ::hero
 ---
 announcement:
-  title: 'Release v0.8.21'
+  title: 'T9 has been updated! Click here to see the changes.'
   icon: '🎉'
-  to: https://github.com/ZTL-UwU/shadcn-docs-nuxt/releases/latest
-  target: _blank
-actions:
-  - name: Documentation
-    to: https://shadcn-docs-nuxt.vercel.app/getting-started/introduction
-  - name: GitHub
-    variant: outline
-    to: https://github.com/ZTL-UwU/shadcn-docs-nuxt
-    leftIcon: 'lucide:github'
+  to: ./new
 ---
 
 #title
-Welcome to shadcn-docs-nuxt
+Welcome to T9
 
 #description
-Beautifully designed Nuxt Content template built with shadcn-vue. :br Customizable. Compatible. Open Source.
+Central Hub of Materials
 ::
 
-::div{class="border rounded-lg shadow-md"}
-  :iframe{src="https://shadcn-docs-nuxt.vercel.app/getting-started/introduction" height="700" width="100%" class="rounded-lg" scrolling="no" frameborder="0"}
+::card-group
+  ::card
+  ---
+  title: Semester 3
+  to: ./semester-3
+  icon: lucide:book-marked
+  ---
+  ::
+
+  ::card
+  ---
+  title: Semester 4
+  to: ./semester-4
+  icon: lucide:book-marked
+  ---
+  ::
+
+  ::card
+  ---
+  title: Semester 5
+  to: ./semester-5
+  icon: lucide:book-marked
+  ---
+  ::
+
+  ::card
+  ---
+  title: Semester 6
+  to: ./semester-6
+  icon: lucide:book-marked
+  ---
+  ::
+::
+
+---
+
+::card-group
+  ::card
+  ---
+  title: Join WhatsApp Group
+  to: https://chat.whatsapp.com/JuvHVkzVjc41ywITKe23h0
+  target: _blank
+  icon: lucide:message-square
+  ---
+  ::
+
+  ::card
+  ---
+  title: Submit Material
+  to: https://tally.so/r/nr6d2N
+  icon: lucide:upload
+  target: _blank
+  ---
+  ::
+
+  ::card
+  ---
+  title: Feedback and Queries
+  to: https://tally.so/r/w48opO
+  icon: lucide:smile
+  target: _blank
+  ---
+  ::
+
+  ::card
+  ---
+  title: Changelog
+  to: ./changelog
+  icon: lucide:replace
+  ---
+  ::
+
+  ::card
+  ---
+  title: About
+  to: ./about
+  icon: lucide:badge-info
+  ---
+  ::
 ::
